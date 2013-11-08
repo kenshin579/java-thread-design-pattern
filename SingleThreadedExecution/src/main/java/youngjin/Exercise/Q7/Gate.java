@@ -8,8 +8,13 @@ public class Gate {
     private String address = "Nowhere";
     private final Mutex mutex = new Mutex();
 
-    public void pass(String name, String address) throws InterruptedException { // synchronized
-        mutex.acquire();
+    public void pass(String name, String address) { // synchronized
+        try {
+            mutex.acquire();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         try {
             this.counter++;
             this.name = name;

@@ -1,4 +1,4 @@
-package youngjin.Exercise.Q6.Answer1;
+package youngjin.Exercise.Q6.Answer2;
 
 public class Tool {
     private final String name;
