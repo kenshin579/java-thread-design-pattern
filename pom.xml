@@ -12,11 +12,11 @@
     </properties>
 
     <modules>
+        <module>common</module>
         <module>intro</module>
         <module>SingleThreadedExecution</module>
         <module>immutable</module>
         <module>AppendixA</module>
-        <module>common</module>
         <module>GuardedSuspension</module>
         <module>balking</module>
     </modules>
