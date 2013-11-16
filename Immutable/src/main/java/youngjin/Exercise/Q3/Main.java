@@ -1,7 +1,7 @@
 package youngjin.Exercise.Q3;
 
 public class Main {
-    private static final long CALL_COUNT = 1000000000L;
+    private static final long CALL_COUNT = 100000000L;
 
     public static void main(String[] args) {
         trial("NotSynch", CALL_COUNT, new NotSynch());

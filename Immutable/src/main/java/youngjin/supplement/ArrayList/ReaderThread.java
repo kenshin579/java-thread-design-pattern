@@ -12,8 +12,10 @@ public class ReaderThread extends Thread {
 
     public void run() {
         while (true) {
-            for (int n : list) {
-                System.out.println(n);
+            synchronized (list) {
+                for (int n : list) {
+                    System.out.println(n);
+                }
             }
         }
     }

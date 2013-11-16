@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Immutable</artifactId>
+    <artifactId>immutable</artifactId>
     <packaging>jar</packaging>
 
-    <name>Immutable</name>
+    <name>immutable</name>
     <url>http://maven.apache.org</url>
 
     <properties>
