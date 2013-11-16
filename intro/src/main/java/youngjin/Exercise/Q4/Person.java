@@ -1,4 +1,4 @@
-package Exercise.Q4;
+package youngjin.Exercise.Q4;
 
 public class Person implements Runnable {
     int type; //1. despoit, 2.withdraw

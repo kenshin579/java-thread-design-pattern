@@ -1,4 +1,4 @@
-package ThreadUsage.ThreadMethodEx;
+package youngjin.ThreadUsage.ThreadMethodEx;
 
 class JoinMethodEx {
     public static void main(String[] args) {

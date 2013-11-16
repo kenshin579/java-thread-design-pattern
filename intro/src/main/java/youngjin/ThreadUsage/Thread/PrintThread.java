@@ -1,9 +1,9 @@
-package ThreadUsage.Runnable;
+package youngjin.ThreadUsage.Thread;
 
-public class Printer implements Runnable {
+public class PrintThread extends Thread {
     private String message;
 
-    public Printer(String message) {
+    public PrintThread(String message) {
         this.message = message;
     }
 

@@ -1,4 +1,4 @@
-package ThreadUsage.Runnable;
+package youngjin.ThreadUsage.Runnable;
 
 /**
  * 질문: interface를 생성자에게 넘겨주면... 어떻게 사용될 수 있나?

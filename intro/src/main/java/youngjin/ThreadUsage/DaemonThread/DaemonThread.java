@@ -1,4 +1,4 @@
-package ThreadUsage.DaemonThread;
+package youngjin.ThreadUsage.DaemonThread;
 
 /**
  * 데몬 쓰레드의 특징

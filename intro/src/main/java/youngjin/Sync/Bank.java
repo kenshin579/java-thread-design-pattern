@@ -1,4 +1,4 @@
-package Sync;
+package youngjin.Sync;
 
 public class Bank {
     private int money;

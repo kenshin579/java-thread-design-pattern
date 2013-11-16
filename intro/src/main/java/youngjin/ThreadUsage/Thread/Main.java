@@ -1,4 +1,4 @@
-package ThreadUsage.Thread;
+package youngjin.ThreadUsage.Thread;
 
 public class Main {
     public static void main(String[] args) {

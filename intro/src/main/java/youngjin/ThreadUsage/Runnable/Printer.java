@@ -1,4 +1,4 @@
-package ThreadUsage.ThreadFactory;
+package youngjin.ThreadUsage.Runnable;
 
 public class Printer implements Runnable {
     private String message;

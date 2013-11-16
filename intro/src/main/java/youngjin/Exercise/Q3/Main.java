@@ -1,4 +1,4 @@
-package Exercise.Q3;
+package youngjin.Exercise.Q3;
 
 public class Main {
     public static void main(String[] args) {
