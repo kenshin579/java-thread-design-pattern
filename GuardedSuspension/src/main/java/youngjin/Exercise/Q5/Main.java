@@ -1,5 +1,8 @@
-package Exercise.Q5;
+package youngjin.Exercise.Q5;
 
+/**
+ * 이거 어떻게 해결해야 하는지 모름.
+ */
 public class Main {
     public static void main(String[] args) {
         RequestQueue requestQueue1 = new RequestQueue();

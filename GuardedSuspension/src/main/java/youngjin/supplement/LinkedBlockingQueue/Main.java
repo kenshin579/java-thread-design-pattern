@@ -1,4 +1,4 @@
-package supplement.LinkedBlockingQueue;
+package youngjin.supplement.LinkedBlockingQueue;
 
 public class Main {
     public static void main(String[] args) {

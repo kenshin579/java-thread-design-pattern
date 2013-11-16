@@ -1,4 +1,4 @@
-package Exercise.Q5;
+package youngjin.Exercise.Q5;
 
 public class TalkThread extends Thread {
     private final RequestQueue input;
@@ -12,15 +12,16 @@ public class TalkThread extends Thread {
 
     public void run() {
         System.out.println(Thread.currentThread().getName() + ":BEGIN");
-        for (int i = 0; i < 20; i++) {
-            // ��꤫��Υꥯ�����Ȥ��餦
-            Request request1 = input.getRequest();
-            System.out.println(Thread.currentThread().getName() + " gets  " + request1);
+        input.putRequest(new Request("hello"));
 
-            // ��ò��(!)��1�ĤĤ��������֤�
-            Request request2 = new Request(request1.getName() + "!");
-            System.out.println(Thread.currentThread().getName() + " puts  " + request2);
-            output.putRequest(request2);
+        for (int i = 0; i < 20; i++) {
+
+            Request getRequestItem = input.getRequest();
+            System.out.println(Thread.currentThread().getName() + " gets  " + getRequestItem);
+
+            Request putRequestItem = new Request(getRequestItem.getName() + "!");
+            System.out.println(Thread.currentThread().getName() + " puts  " + putRequestItem);
+            output.putRequest(putRequestItem);
         }
         System.out.println(Thread.currentThread().getName() + ":END");
     }

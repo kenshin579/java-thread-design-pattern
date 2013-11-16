@@ -1,4 +1,4 @@
-package Exercise.Q5;
+package youngjin.Exercise.Q6;
 
 public class Request {
     private final String name;

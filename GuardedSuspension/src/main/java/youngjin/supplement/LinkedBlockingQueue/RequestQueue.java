@@ -1,4 +1,4 @@
-package supplement.LinkedBlockingQueue;
+package youngjin.supplement.LinkedBlockingQueue;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

@@ -1,4 +1,4 @@
-package supplement.LinkedBlockingQueue;
+package youngjin.supplement.LinkedBlockingQueue;
 
 import java.util.Random;
 

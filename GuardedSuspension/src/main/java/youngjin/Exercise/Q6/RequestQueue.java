@@ -1,4 +1,4 @@
-package Exercise.Q6;
+package youngjin.Exercise.Q6;
 
 
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package Exercise.Q5;
+package youngjin.Exercise.Q5;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -9,6 +9,7 @@ public class RequestQueue {
     public synchronized Request getRequest() {
         while (queue.peek() == null) {
             try {
+                System.out.println("waiting...");
                 wait();
             } catch (InterruptedException e) {
             }
@@ -18,6 +19,7 @@ public class RequestQueue {
 
     public synchronized void putRequest(Request request) {
         queue.offer(request);
+        System.out.println("notifyAll...");
         notifyAll();
     }
 }

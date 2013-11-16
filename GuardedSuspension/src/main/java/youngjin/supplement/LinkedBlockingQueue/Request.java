@@ -1,4 +1,4 @@
-package Exercise.Q6;
+package youngjin.supplement.LinkedBlockingQueue;
 
 public class Request {
     private final String name;

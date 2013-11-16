@@ -1,4 +1,4 @@
-package supplement.LinkedBlockingQueue;
+package youngjin.Exercise.Q6;
 
 import java.util.Random;
 
