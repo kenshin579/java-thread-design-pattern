@@ -19,6 +19,7 @@
         <module>AppendixA</module>
         <module>GuardedSuspension</module>
         <module>balking</module>
+        <module>ProducerConsumer</module>
     </modules>
 
     <build>
