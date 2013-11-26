@@ -21,6 +21,9 @@
         <module>balking</module>
         <module>ProducerConsumer</module>
         <module>ReadWriteLock</module>
+        <module>ThreadPerMessage</module>
+        <module>Future</module>
+        <module>WorkerThread</module>
     </modules>
 
     <build>
