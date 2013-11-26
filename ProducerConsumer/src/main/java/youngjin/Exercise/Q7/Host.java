@@ -8,9 +8,6 @@ public class Host {
     }
 
     private static void doHeavyJob() {
-        // �ʲ��ϡ�
-        // �֥���󥻥��Բ�ǽ�ʽŤ�����פ�����
-        // ����10�ôֲ��롼�ס�
         System.out.println("doHeavyJob BEGIN");
         long start = System.currentTimeMillis();
         while (start + 10000 > System.currentTimeMillis()) {

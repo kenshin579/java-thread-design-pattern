@@ -2,9 +2,9 @@ package youngjin.Exercise.Q8;
 
 public class Table {
     private final String[] buffer;
-    private int tail;  // ����put������
-    private int head;  // ����take������
-    private int count; // buffer��Υ�������
+    private int tail;
+    private int head;
+    private int count;
 
     public Table(int count) {
         this.buffer = new String[count];
@@ -13,7 +13,6 @@ public class Table {
         this.count = 0;
     }
 
-    // ���������֤�
     public synchronized void put(String cake) throws InterruptedException {
         System.out.println(Thread.currentThread().getName() + " puts " + cake);
         while (count >= buffer.length) {
@@ -25,7 +24,6 @@ public class Table {
         notify();
     }
 
-    // ����������
     public synchronized String take() throws InterruptedException {
         while (count <= 0) {
             wait();

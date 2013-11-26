@@ -9,4 +9,13 @@ public class Something {
             }
         }
     }
+
+    public static void main(String[] args) {
+        try {
+            System.out.println("sleep");
+            method(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
