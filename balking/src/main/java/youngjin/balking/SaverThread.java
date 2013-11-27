@@ -1,4 +1,4 @@
-package youngjin.balking;
+package youngjin.Balking;
 
 import java.io.IOException;
 
