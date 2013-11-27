@@ -3,8 +3,8 @@ package youngjin.supplement.ThreadPoolExecutor;
 import java.util.Random;
 
 public class Request implements Runnable {
-    private final String name; // �����
-    private final int number;  // �ꥯ�����Ȥ��ֹ�
+    private final String name;
+    private final int number;
     private static final Random random = new Random();
 
     public Request(String name, int number) {

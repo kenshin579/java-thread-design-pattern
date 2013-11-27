@@ -21,7 +21,7 @@ public class ClientThread extends Thread {
                 Thread.sleep(random.nextInt(1000));
             }
         } catch (InterruptedException e) {
-        } catch (RejectedExecutionException e) {
+        } catch (RejectedExecutionException e) { // shutdown() 호출되면 RejectedExecutionException 예외를 던짐
             System.out.println(getName() + " : " + e);
         }
     }

@@ -1,4 +1,4 @@
-package youngjin.workerthread;
+package youngjin.Exercise.Q6;
 
 import java.util.Random;
 
