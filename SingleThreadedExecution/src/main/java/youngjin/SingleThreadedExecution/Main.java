@@ -1,4 +1,4 @@
-package youngjin.singlethreaded;
+package youngjin.SingleThreadedExecution;
 
 /**
  * BROKEN 메시지 없이 정상 동작함

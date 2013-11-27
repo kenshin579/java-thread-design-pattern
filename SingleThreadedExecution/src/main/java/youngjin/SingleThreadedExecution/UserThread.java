@@ -1,4 +1,4 @@
-package youngjin.singlethreaded;
+package youngjin.SingleThreadedExecution;
 
 public class UserThread extends Thread {
     private final Gate gate;

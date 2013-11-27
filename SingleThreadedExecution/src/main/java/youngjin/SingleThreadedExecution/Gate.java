@@ -1,4 +1,4 @@
-package youngjin.singlethreaded;
+package youngjin.SingleThreadedExecution;
 
 public class Gate {
     private int counter = 0;
