@@ -1,7 +1,7 @@
 package youngjin.Exercise.Q3;
 
-import content.Content;
-import content.Retriever;
+import youngjin.Exercise.Q3.content.Content;
+import youngjin.Exercise.Q3.content.Retriever;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -23,7 +23,6 @@ public class Main {
         System.out.println("Elapsed time = " + (end - start) + "msec.");
     }
 
-    // filename�Ȥ���̾���Υե������content����Ȥ�񤭽Ф�
     private static void saveToFile(String filename, Content content) {
         byte[] bytes = content.getBytes();
         try {

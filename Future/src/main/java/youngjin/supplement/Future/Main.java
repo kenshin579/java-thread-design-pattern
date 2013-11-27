@@ -1,4 +1,4 @@
-package youngjin.supplement;
+package youngjin.supplement.Future;
 
 public class Main {
     public static void main(String[] args) {

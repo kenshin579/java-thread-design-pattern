@@ -1,5 +1,8 @@
-package youngjin.future;
+package youngjin.Future;
 
+/**
+ * 실제 데이터를 표현한 클래스... 다소 시간이 걸리는 데이터
+ */
 public class RealData implements Data {
     private final String content;
 

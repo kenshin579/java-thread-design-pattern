@@ -1,4 +1,4 @@
-package youngjin.supplement;
+package youngjin.supplement.Future;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -12,6 +12,7 @@ public class FutureData extends FutureTask<RealData> implements Data {
     public String getContent() {
         String string = null;
         try {
+            // get()메서는 FutureTask 클래스의 메서드로 반환 값은 RealData 형이다.
             string = get().getContent();
         } catch (InterruptedException e) {
             e.printStackTrace();

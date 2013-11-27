@@ -1,5 +1,8 @@
-package youngjin.future;
+package youngjin.Future;
 
+/**
+ *
+ */
 public class Main {
     public static void main(String[] args) {
         System.out.println("main BEGIN");
@@ -14,6 +17,11 @@ public class Main {
         } catch (InterruptedException e) {
         }
         System.out.println("main otherJob END");
+
+        /*
+         * Q: getContent를 할때 준비가 되어 있지 않다면.. 어떻게 되나?
+         * A: wait()를 하게 된다. 데이터가 채워질 때까지 기대림
+         */
 
         System.out.println("data1 = " + data1.getContent());
         System.out.println("data2 = " + data2.getContent());
