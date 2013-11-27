@@ -21,6 +21,11 @@ public class Host {
         );
 
         // (2) RealData를 만들기 위한 새로운 쓰레드를 기동한다.
+        /*
+         * Q: Thread의 run()은 어디에 있나?
+         * A: FutureTask.run() 메서드를 호출하는 쓰레드가 call() 메서드도 호출함
+         * - 위에 있는 call() 메서드가 실행되고 RealData를 생성해서 반환해준다.
+         */
         new Thread(future).start();
 
         System.out.println("    request(" + count + ", " + c + ") END");
