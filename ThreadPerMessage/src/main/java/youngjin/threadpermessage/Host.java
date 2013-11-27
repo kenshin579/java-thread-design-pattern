@@ -1,4 +1,4 @@
-package youngjin.threadpermessage;
+package youngjin.ThreadPerMessage;
 
 public class Host {
     private final Helper helper = new Helper();
