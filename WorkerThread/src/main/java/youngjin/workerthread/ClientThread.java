@@ -1,4 +1,4 @@
-package youngjin.workerthread;
+package youngjin.WorkerThread;
 
 import java.util.Random;
 

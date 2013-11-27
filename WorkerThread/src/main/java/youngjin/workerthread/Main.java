@@ -1,4 +1,4 @@
-package youngjin.workerthread;
+package youngjin.WorkerThread;
 
 public class Main {
     public static void main(String[] args) {

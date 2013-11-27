@@ -1,4 +1,4 @@
-package youngjin.workerthread;
+package youngjin.WorkerThread;
 
 public class Channel {
     private static final int MAX_REQUEST = 100;

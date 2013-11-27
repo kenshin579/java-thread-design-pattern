@@ -1,6 +1,6 @@
 package youngjin.Exercise.Q6;
 
-import youngjin.workerthread.Request;
+import youngjin.WorkerThread.Request;
 
 import java.util.Random;
 

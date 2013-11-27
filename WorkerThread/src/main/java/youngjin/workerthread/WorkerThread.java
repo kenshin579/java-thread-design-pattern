@@ -1,4 +1,4 @@
-package youngjin.workerthread;
+package youngjin.WorkerThread;
 
 public class WorkerThread extends Thread {
     private final Channel channel;
