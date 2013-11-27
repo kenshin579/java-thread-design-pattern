@@ -1,4 +1,4 @@
-package youngjin.guardedsuspension;
+package youngjin.GuardedSuspension;
 
 public class Request {
     private final String name;

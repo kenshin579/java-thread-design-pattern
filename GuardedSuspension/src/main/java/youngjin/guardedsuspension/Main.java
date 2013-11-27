@@ -1,4 +1,4 @@
-package youngjin.guardedsuspension;
+package youngjin.GuardedSuspension;
 
 public class Main {
     public static void main(String[] args) {

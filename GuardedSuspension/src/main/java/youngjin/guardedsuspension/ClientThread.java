@@ -1,4 +1,4 @@
-package youngjin.guardedsuspension;
+package youngjin.GuardedSuspension;
 
 import java.util.Random;
 
