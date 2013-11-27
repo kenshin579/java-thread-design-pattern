@@ -1,4 +1,4 @@
-package youngjin.sample;
+package youngjin.ProducerConsumer;
 
 public class Table {
     private final String[] buffer;

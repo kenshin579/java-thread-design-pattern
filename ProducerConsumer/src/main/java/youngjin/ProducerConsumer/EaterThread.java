@@ -1,4 +1,4 @@
-package youngjin.sample;
+package youngjin.ProducerConsumer;
 
 import java.util.Random;
 
