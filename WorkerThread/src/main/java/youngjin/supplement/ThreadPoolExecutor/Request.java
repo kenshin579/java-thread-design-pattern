@@ -1,10 +1,10 @@
-package youngjin.workerthread;
+package youngjin.supplement.ThreadPoolExecutor;
 
 import java.util.Random;
 
-public class Request {
-    private final String name;
-    private final int number;
+public class Request implements Runnable {
+    private final String name; // �����
+    private final int number;  // �ꥯ�����Ȥ��ֹ�
     private static final Random random = new Random();
 
     public Request(String name, int number) {
@@ -12,8 +12,7 @@ public class Request {
         this.number = number;
     }
 
-    // 질문: 여기서 this가 의미하는 것은?
-    public void execute() {
+    public void run() {
         System.out.println(Thread.currentThread().getName() + " executes " + this);
         try {
             Thread.sleep(random.nextInt(1000));
