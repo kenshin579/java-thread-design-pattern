@@ -15,9 +15,10 @@ public class Main {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
         }
-//        alice.stopThread();
-//        bobby.stopThread();
-//        chris.stopThread();
-//        channel.stopAllWorkers();
+
+        alice.stopThread();
+        bobby.stopThread();
+        chris.stopThread();
+        channel.stopAllWorkers();
     }
 }

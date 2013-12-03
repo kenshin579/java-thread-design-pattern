@@ -1,7 +1,5 @@
 package youngjin.Exercise.Q6;
 
-import youngjin.WorkerThread.Request;
-
 import java.util.Random;
 
 public class ClientThread extends Thread {
@@ -21,6 +19,11 @@ public class ClientThread extends Thread {
                 Thread.sleep(random.nextInt(1000));
             }
         } catch (InterruptedException e) {
+            System.out.println(Thread.currentThread().getName() + "... stopped");
         }
+    }
+
+    public void stopThread() {
+        interrupt();
     }
 }

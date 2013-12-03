@@ -53,4 +53,11 @@ public class Channel {
         notifyAll();
         return request;
     }
+
+    public void stopAllWorkers() {
+        for (int i = 0; i < threadPool.length; i++) {
+            threadPool[i].interrupt();
+            System.out.println(threadPool[i].isInterrupted() ? "interrupted" : "not interrupted");
+        }
+    }
 }

@@ -27,6 +27,12 @@ public class Channel {
         }
     }
 
+    /**
+     * Q: 여기 메서드안에 new Thread를 하면 동기화는 어떻게 되나요?
+     * -
+     *
+     * @param request
+     */
     public synchronized void putRequest(Request request) {
         while (count >= requestQueue.length) {
             try {

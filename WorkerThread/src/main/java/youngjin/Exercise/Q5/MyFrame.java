@@ -22,7 +22,12 @@ public class MyFrame extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button) {
-            countUp();
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    countUp();
+                }
+            }).start();
         }
     }
 

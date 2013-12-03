@@ -9,9 +9,14 @@ public class WorkerThread extends Thread {
     }
 
     public void run() {
-        while (true) {
-            Request request = channel.takeRequest();
-            request.execute();
+        try {
+            while (true) {
+                Request request = channel.takeRequest();
+                request.execute();
+                Thread.sleep(10);
+            }
+        } catch (InterruptedException e) {
+            System.out.println(Thread.currentThread().getName() + "...stopped");
         }
     }
 }
