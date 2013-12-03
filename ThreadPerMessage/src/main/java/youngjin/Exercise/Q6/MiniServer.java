@@ -3,6 +3,7 @@ package youngjin.Exercise.Q6;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.ThreadFactory;
 
 public class MiniServer {
     private final int portnumber;
@@ -17,13 +18,22 @@ public class MiniServer {
         try {
             while (true) {
                 System.out.println("Accepting...");
-                Socket clientSocket = serverSocket.accept();
+                final Socket clientSocket = serverSocket.accept();
                 System.out.println("Connected to " + clientSocket);
-                try {
-                    Service.service(clientSocket);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                new ThreadFactory() {
+                    public Thread newThread(Runnable r) {
+                        return new Thread(r);
+                    }
+                }.newThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            Service.service(clientSocket);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }).start();
             }
         } catch (IOException e) {
             e.printStackTrace();

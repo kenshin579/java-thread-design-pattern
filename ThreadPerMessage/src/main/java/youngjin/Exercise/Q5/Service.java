@@ -1,6 +1,7 @@
 package youngjin.Exercise.Q5;
 
-public class Service {
+public class Service extends Thread {
+
     public static void service() {
         System.out.print("service");
         for (int i = 0; i < 50; i++) {
@@ -11,5 +12,10 @@ public class Service {
             }
         }
         System.out.println("done.");
+    }
+
+    @Override
+    public void run() {
+        this.service();
     }
 }

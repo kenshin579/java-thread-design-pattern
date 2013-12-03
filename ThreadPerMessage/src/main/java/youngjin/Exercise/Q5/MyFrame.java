@@ -19,6 +19,8 @@ public class MyFrame extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        Service.service();
+        System.out.println(e.getSource() instanceof JButton ? "button" : "not button");
+        new Service().start();
+//        Service.service();
     }
 }
