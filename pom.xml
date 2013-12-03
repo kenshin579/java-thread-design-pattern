@@ -24,6 +24,8 @@
         <module>ThreadPerMessage</module>
         <module>Future</module>
         <module>WorkerThread</module>
+        <module>TwoPhaseTermination</module>
+        <module>ThreadSpecificStorage</module>
     </modules>
 
     <build>
