@@ -1,29 +1,27 @@
 package youngjin.ThreadSpecificStorage;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-
 public class Log {
-    private static PrintWriter writer = null;
+    // tsLogCollection은 TSLog의 인스턴스를 각각의 쓰레드에서 보관하고 있는 락커 룸과 같이 존재함
+    private static final ThreadLocal<TSLog> tsLogCollection = new ThreadLocal<TSLog>();
 
-    // writer�ե�����ɤν��
-    static {
-        try {
-            writer = new PrintWriter(new FileWriter("log.txt"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    // �?���
     public static void println(String s) {
-        writer.println(s);
+        getTSLog().println(s);
     }
 
-    // �?���Ĥ���
     public static void close() {
-        writer.println("==== End of log ====");
-        writer.close();
+        getTSLog().close();
+    }
+
+    // 현재의 쓰레드를 열쇠로 사용하여 TSLog 객체를 get/set함
+    private static TSLog getTSLog() {
+        TSLog tsLog = tsLogCollection.get();
+
+
+        if (tsLog == null) {
+            tsLog = new TSLog(Thread.currentThread().getName() + "-log.txt");
+            tsLogCollection.set(tsLog);
+        }
+
+        return tsLog;
     }
 }
