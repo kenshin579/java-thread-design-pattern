@@ -6,7 +6,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 class ActiveObjectImpl implements ActiveObject {
-    private final ExecutorService service = Executors.newSingleThreadExecutor();
+    //    private final ExecutorService service = Executors.newSingleThreadExecutor();
+    private final ExecutorService service = Executors.newFixedThreadPool(3);
 
     public void shutdown() {
         service.shutdown();
