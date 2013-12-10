@@ -7,7 +7,6 @@ import java.io.PrintWriter;
 public class TSLog {
     private PrintWriter writer = null;
 
-    // writer�ե�����ɤν��
     public TSLog(String filename) {
         try {
             writer = new PrintWriter(new FileWriter(filename));
@@ -16,12 +15,10 @@ public class TSLog {
         }
     }
 
-    // �?���
     public void println(String s) {
         writer.println(s);
     }
 
-    // �?���Ĥ���
     public void close() {
         writer.println("==== End of log ====");
         writer.close();
