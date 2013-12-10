@@ -24,10 +24,8 @@ public class MyFrame extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == executeButton) {
-            // �����ӥ��¹Գ���
             Service.service();
         } else if (e.getSource() == cancelButton) {
-            // �����ӥ����
             Service.cancel();
         }
     }

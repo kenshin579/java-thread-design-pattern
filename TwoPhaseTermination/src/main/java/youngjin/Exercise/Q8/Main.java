@@ -2,7 +2,6 @@ package youngjin.Exercise.Q8;
 
 public class Main {
     public static void main(String[] args) {
-        // ����åɤ���������
         Thread t = new Thread() {
             public void run() {
                 while (true) {
@@ -18,16 +17,13 @@ public class Main {
             }
         };
 
-        // ����åɤ�ư����
         t.start();
 
-        // 5���Ԥ�
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
         }
 
-        // ����åɤ˰��٤���interrupt�򤫤���
         t.interrupt();
     }
 }

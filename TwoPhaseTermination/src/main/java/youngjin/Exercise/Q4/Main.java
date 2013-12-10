@@ -1,19 +1,22 @@
-package youngjin.Exercise.Q7;
+package youngjin.Exercise.Q4;
+
+import youngjin.Exercise.Q2.CountupThread;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("main: BEGIN");
         try {
-            HanoiThread t = new HanoiThread();
+            CountupThread t = new CountupThread();
             t.start();
 
 //            Thread.sleep(10000);
-            Thread.sleep(3000);
+            Thread.sleep(4000);
 
             System.out.println("main: shutdownRequest");
             t.shutdownRequest();
 
             System.out.println("main: join");
+
             t.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
