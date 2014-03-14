@@ -25,7 +25,7 @@ public class ClientThread extends Thread {
             try {
                 Thread.sleep(random.nextInt(1000));
             } catch (InterruptedException e) {
-                System.out.println("thread interupt completed");
+                System.out.println("thread interrupt completed");
                 break; // 이렇게 해주면 됨
             }
 
